@@ -1,10 +1,9 @@
 # Torch.js
-A simple jQuery plugin that triggers functions on vertical in the window scrolling when the element is in a specified point within the window
+A simple jQuery plugin that triggers functions when the page is scrolled to a specified point.
 
+This plugin only listens to scrolling in the window, not for individual elements. Thus, as an example, if you want to trigger a function while scrolling a div with an 'overflow-y' of 'scroll', this will not work for that purpose. <b>This will only work for vertical scrolling on the window itself.</b>
 
-This plugin only listens to scrolling in the window, not for individual elements. Thus, as an example, if you want to trigger a function while scrolling a Div with an 'overflow-y' of 'scroll', this will not work for that purpose. <b>This will only work for vertical scrolling on the window itself.</b>
-
-This plugin aims to work like the scroll animations found at Zed Shaw's 'Learn Python the hard way". (http://learnpythonthehardway.org/), in that it allows you to execute a function when a certain element is at a specified position within the window, and also allows you to execute a function on a reverse (upward) scroll at the same or a different point. 
+This plugin aims to work like the scroll animations found at Zed Shaw's 'Learn Python the hard way" (http://learnpythonthehardway.org/), in that it allows you to execute a function when a certain element is at a specified position within the window, and also allows you to execute a function on a reverse (upward) scroll at the same or a different point. 
 
 # Use:
 
