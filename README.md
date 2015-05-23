@@ -39,4 +39,4 @@ As you can see, Torch expects an object with certain properties. Only one is man
                 }
         });
         
-  In the above example, all div's that are odd have a downward scroll triggerPoint of 0.2, meaning 20% from the top of the     window. When the top of the element is scrolled to that point, the forward function will execute, turning the background     color of the div to black. When scrolled upwards, when the top of the element is scrolled to the same point (the             triggerPoint), the reverse function will execute, turning the background color to white. 
+  In the above example, all divs that are odd have a downward scroll triggerPoint of 0.2, meaning 20% from the top of the      window. When the top of the element is scrolled to that point, the forward function will execute, turning the background     color of the div to black. When scrolled upwards, when the top of the element is scrolled to the same point (the             triggerPoint), the reverse function will execute, turning the background color to white. 
