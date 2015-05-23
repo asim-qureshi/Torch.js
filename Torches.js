@@ -1,33 +1,35 @@
 /**
-* Torches is a jquery plugin that allows you to trigger a function 
+* Torches is a jQuery plugin that allows you to trigger a function 
 * when the user scrolls vertically to a certain point on the page.
 *
 * It also allows you to specify the point in the window where the 
 * function is triggered. Other options include an optional function
-* to trigger on an upward scroll, and a seocnd point in the window 
+* to trigger on an upward scroll, and a second point in the window 
 * to trigger the upward scroll function. Please refer to the README 
 * for more explanations of how it works. 
 * 
 * To use:
 * 
-* $(#Element).Torches({
+* $('#Element').Torches({
 *    forward: // REQUIRED: function triggered on downward scroll
 *  });
 * 
 * Properties expected by the Torches object: 
 *   
-*  1.) forward: a required property. must be a function. The DOM element 
+*  1.) forward: a required property and must be a function. The DOM element 
 *      that you wish to exercise the function on can be referred to within the
-*      the forward function as "$(this)"  
+*      the forward function as "$(this)".  
 *
-*  2.) triggerPoint: an option property. if not passed, it will default to
-*      0. This property specifies where, within the window, the function will
-*      be triggered. a value of 0 (default) will mean that once the top of the
+*  2.) triggerPoint: an optional property. If not passed, it will default to
+*      0. This property specifies where, within the window to trigger the function.
+*      A value of 0 (default) will mean that once the top of the
 *      element reaches the top of the window, the function will be triggered,
-*      while a value of 1 (not sure why you'd ever want to pass this value) means
-*      that when the top of the element reaches the bottom of the window, it will
-*      be triggered. Similarly, a value of 0.5 means that once the top of the element 
-*      reaches halfway through thr window, the function will be triggered. 
+*      while a value of 1 means that when the top of the element reaches the bottom 
+*      of the window, it will be triggered (not sure why you'd ever want to pass
+*      this value, since that essentially means the element will trigger
+*      just before entering  the viewport). Similarly, a value of 0.5 means 
+*      that once the top of the element reaches halfway through the window, 
+*      the function will be triggered. 
 *
 *  3.) reverse: An optional function. This function will execute when the page
 *      is scrolled upwards, as opposed to downwards (hence, reverse). In this case
@@ -35,8 +37,9 @@
 *      defined before, or, if the 'reversePoint' property is desired, it will 
 *      execute at that point. This property is discussed next.
 *
-*  4.) reversePoint: An optional second trigger point. It's values are between
-*      0 and 1, just as the triggerPoint property, and will execute the reverse
+*  4.) reversePoint: An optional second trigger point. Its values are between
+*      0 and 1, just as the triggerPoint property, and will specify at which point
+*      in the window that the reverse function is to be executed.
 *       
 *  https://github.com/asim-qureshi/torches.js
 */     
