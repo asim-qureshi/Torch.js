@@ -10,7 +10,7 @@
 * 
 * To use:
 * 
-* $('#Element').Torches({
+* $('#Element').Torch({
 *    forward: // REQUIRED: function triggered on downward scroll
 *  });
 * 
@@ -41,8 +41,9 @@
 *      0 and 1, just as the triggerPoint property, and will specify at which point
 *      in the window that the reverse function is to be executed.
 *       
-*  https://github.com/asim-qureshi/torches.js
+*  https://github.com/asim-qureshi/torch.js
 */     
+ 
 if (typeof(Object.create !== "function")) {
     Object.create = function( obj ) {
         function F() {};
@@ -107,10 +108,10 @@ if (typeof(Object.create !== "function")) {
         }
     };
                 
-    $.fn.Torches = function(config) {
+    $.fn.Torch = function(config) {
         return this.each(function() {
-            var torch = Object.create( Torches );
-            torch.init( config, this );       
+            var torched = Object.create( Torches );
+            torched.init( config, this );       
         })
     };    
     
