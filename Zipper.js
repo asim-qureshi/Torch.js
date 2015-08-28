@@ -7,17 +7,17 @@
 			
 		this.elem = $(elem);
 		this.unzip = config.unzip;
-		this.zip = config.zip || null; //downward scroll function is either defined or null
+		this.zip = config.zip || null; // upward scroll function is either defined or null
 		
-		if (config.container) { //if a scrollable element other than the window is passed
+		if (config.container) { // if a scrollable element other than the window is passed
 			this.container = $(config.container);
-			this.elemPos = this.elem.position().top; //use the position().top method to get the vertical offset of our DOM element
+			this.elemPos = this.elem.position().top; // use the position().top method to get the vertical offset of our DOM elements
 			if (this.container.css('position') === 'static') {
 				throw new Error('The parent element must be a positioned element (relative, fixed, or absolute)');
 			}
-		} else {  //otherwise, default is window
+		} else {  // otherwise, default is window
 			this.container = $(window);
-			this.elemPos = this.elem.offset().top; //use the offset().top method to get vertical position of our DOM Element
+			this.elemPos = this.elem.offset().top; // use the offset().top method to get vertical position of our DOM Element
 		}
 		
 		this.triggerPoint = config.triggerPoint * this.container.innerHeight() || 0; // point in the window to fire the element is either defined or the element top
