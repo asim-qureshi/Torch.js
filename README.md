@@ -74,7 +74,7 @@ If you wish to trigger the Zipper functions on an element within something like 
       this.css('color', 'black'); 
     },
     reversePoint: 0.75,
-    container: document.getElementById('scrollablediv') //this instance of Zipper will trigger while scrolling through this property
+    container: document.getElementById('scrollablediv') //this instance of Zipper will trigger while scrolling through this element.
   });  
 ```
 
