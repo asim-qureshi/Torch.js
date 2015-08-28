@@ -6,8 +6,8 @@
         init: function (config, elem) {
 			
 		this.elem = $(elem);
-		this.unzip = config.unzip;
-		this.zip = config.zip || null; // upward scroll function is either defined or null
+		this.unzip = config.unzip || null; // scroll function is either defined or null
+		this.zip = config.zip || null; 
 		
 		if (config.container) { // if a scrollable element other than the window is passed
 			this.container = $(config.container);
@@ -21,7 +21,7 @@
 		}
 		
 		this.triggerPoint = config.triggerPoint * this.container.innerHeight() || 0; // point in the window to fire the element is either defined or the element top
-		this.reversePoint = config.reversePoint * this.container.innerHeight() || undefined;
+		this.reversePoint = config.reversePoint * this.container.innerHeight() || this.triggerPoint;
 		this.scroll();
         },
 		
