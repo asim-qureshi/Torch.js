@@ -1,0 +1,24 @@
+{
+  "name": "Zipper.js",
+  "main": "zipper.js",
+  "version": "1.0.0",
+  "description": "a jQuery plugin for scrolling events",
+  "keywords": [
+    "scrolling",
+    "events"
+  ],
+  "authors": [
+    "Asim Qureshi"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
